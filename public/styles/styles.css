@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-app{
+    background-color: white;
+    width: 50%;
+    max-width: 520px;
+    border-radius: 30px;
+    min-height: 200px;
+    padding-bottom: 30px;
+    
+
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.todo-app #icon {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+.todo-app #name {
+    font-size: 1.5rem;
+    display: inline-block;
+    
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+button{
+    background-color: orangered;
+    width: 80px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+
+
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 60px;
+    position: relative;
+
+
+
+
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/Images/unchecked.png); /* Add your background image URL here */
+    top: 12px;
+    left: 20px;
+
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/Images/checked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 20px;
+
+
+}
+
+ul li span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+ul li span:hover {
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.welcome{
+    background-color: white;
+    width: 50%;
+    max-width: 520px;
+    border-radius: 30px;
+    min-height: 200px;
+    position: relative;
+
+    
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+    display: block;
+}
+
+.get-started {
+    display: flex;
+    position: absolute;
+    
+
+}
+
+
